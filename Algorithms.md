@@ -12,22 +12,22 @@ step:6- End the algorithm
 step1. Start the algorithm
 step2. Let N as number
 step3. Take input in N
-step4. For T=1 to 10
+step4. put the value of T=1 in the below expression
 step5. Display M=N*T
+step6. put the value T=T+1 in step 5 untill T is less than 11
+step7. End the algorithm
 ```
 ## Exercise 3:-Write an algorithm for checking whether given number is perfect number or not.
 ```
 Step1. Start the algorithm.
-Step2. Let variable i,num,sum=0
-Step3. Accept num
-Step4. continue a loop of i=1->num
-       check if(num%i==0)
-       if true, then Sum=sum+i
-       end of the loop
-Step5. Then check a number is equal to sum
-step6. display perfect number
-Step7. else display not a prefect number
-Step7. End the Algorithm.
+Step2. Let A is the number
+step3. Take input in A
+step4. Find out all the divisors of A
+step5. Add all the divisors except itself A as divisor
+step6. If Add result is equal to A 
+step7. Than Display it is a perfect number
+step8. Else Display it is not a perfect number
+Step9. End the Algorithm.
 ```
 ## Exercise 4:-Write an algorithm for accepting three numbers and display the lowest number out of three numbers.
 ```
@@ -125,12 +125,14 @@ step10. End the algorithm
 ```
 step1. Start the algorithm
 step2. Let A,B as number which defines a range.
-step3. 
-step4.
-step5.
-step6.
+step3. Take input in A
+step4. Take input in B
+step5. A is divided by 2 to A(number itself) one by one
+step6. If remainder is equal to 0 in the only case when A is  Divided by A
+step7. Than Display it is a prime number
+step8. Put A=A+1 in step5 untill A<=B 
+step9. End the algorithm 
 ```
-
 ## Exercise 12:-Write an algorithm Write an algorithm to accept student Details like (StudentID StudentName, StudentAge, Marks1,Marks2, Marks3) Calculate Total and Percentage. If percentage is greater than 50 then display “PASS” else display “FAIL”.
 ```
 step1. Start the algorithm
