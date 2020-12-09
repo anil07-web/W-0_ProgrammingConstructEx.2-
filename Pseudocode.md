@@ -115,7 +115,7 @@ end
 ## Exercise 8:-Write a pseudocode for implementing the concept of menu driven calculator which will accept two numbers and perform the calculation based upon users choice like (+,-,*,/).
 ```
 begin
-ch n
+character n
 numeric a,b
 display "Enter choice(+,-,*,/) which want to perform"
 accept n
@@ -137,7 +137,7 @@ end
 ## Exercise 9:-Write a pseudocode for accepting firstname,middlename and lastname from the user in three different variables and concatenate the first character of firstname with second character of middlename and third character of lastname.
 ```
 begin
-ch f,m,l
+character f,m,l
 display enter firstname
 accept f
 display enter middlename
@@ -196,7 +196,7 @@ End
 ## Exercise 12:-Write a pseudocode to accept student Details like (StudentID, StudentName, StudentAge, Marks1, Marks2,Marks3) Calculate Total and Percentage. If percentage is greater than 50 then display “PASS” else display “FAIL”.
 ```
 begin
-ch si,sn,sa
+character si,sn,sa
 numeric m1,m2,m3,total,percentage
 display enter studentid
  accept si
