@@ -24,19 +24,20 @@ end
 begin
     numeric number
     accept number
-    Initialize i to 1
-    Initialize sum to 0
-    while i<number, do:
-    if number%i == 0
+    numeric i=1
+    numeric sum=0
+    while(i<number)
+    begin
+    if(number%i == 0)
+     begin
       sum=sum+i
-    end if
-    Increment i
-    end while
-    if sum == number
+     end
+     i++
+    end
+    if(sum==number)
         display "Number is perfect number"
     else
         display "Number is not perfect number"
-    end if
 end
 ```
 ## Exercise 4:-Write a pseudocode for accepting three numbers and display the lowest number out of three numbers.
@@ -44,20 +45,20 @@ end
 begin
 numeric a,b,c
 accept a,b,c
-IF a<b
+if(a<b)
  begin
-  IF a<c
+  if(a<c)
    begin
     display a is lowest
     break;
    end 
-   elseif 
+   else if 
    begin
     display c is lowest
     break;
    end
  end    
-  elseif b<c
+  else if(b<c)
     display b is lowest  
    else 
     display c is lowest   
@@ -81,11 +82,10 @@ begin
 numeric n,s
 accept n
  s=√n
-IF(s-⌈s⌉==0)
+if(s-⌈s⌉==0)
  display number is perfect square
  else
  display number is not perfect square
- ENDIF
 end 
 ```
 ## Exercise 7:-Write a pseudocode for accepting a number from 1 to 7 and display the name of the week.
@@ -93,23 +93,22 @@ end
 begin
 numeric n
 accept n
-IF n==1
- display Monday
- ELSEIF n==2
+ if(n==1)
+  display Monday
+  else if(n==2)
   display Tuesday
- ELSEIF n==3
+  else if(n==3)
   display Wednesday
- ELSEIF n==4
+  else if(n==4)
   display Thursday
- ELSEIF n==5
+  else if(n==5)
   display Friday
- ELSEIF n==6
+  else if(n==6)
   display Saturday 
- ELSEIF n==7
- display Sunday 
- ELSE
- display Invalid input
- ENDIF 
+  else if(n==7)
+  display Sunday 
+  else
+  display Invalid input 
 end
 ```
 ## Exercise 8:-Write a pseudocode for implementing the concept of menu driven calculator which will accept two numbers and perform the calculation based upon users choice like (+,-,*,/).
@@ -122,16 +121,16 @@ accept n
 display "Enter two numbers"
 accept a
 accept b
-IF n==+
+if(n=='+')
  display a+b
- ELSEIF n==-
+ else if(n=='-')
  display a-b
- ELSEIF n==*
+ else if(n=='*')
  display a*b
- ELSEIF n==/
+ else if(n=='/')
  display a/b
-ELSE display invalid input 
-ENDIF
+ else 
+ display invalid input 
 end
 ```
 ## Exercise 9:-Write a pseudocode for accepting firstname,middlename and lastname from the user in three different variables and concatenate the first character of firstname with second character of middlename and third character of lastname.
@@ -145,7 +144,7 @@ accept m
 display enter lastname
 accept l
 display append.lengthf(0)+append.lengthm(1)
-+append.lengthl(3)
++append.lengthl(2)
 end
 ```
 ## Exercise 10:-Write a pseudocode for accepting a five digit number and check whether the number is palindrome or not.
@@ -157,11 +156,10 @@ accept b
 accept c
 accept d
 accept e
-IF(a==e and b==d)
+if(a==e && b==d)
  display number is palindrome
- ELSE
+ else
  display number is not palindrome
-ENDIF
 end 
 ```
 ## Exercise 11:-Write a pseudocode for displaying the list of prime numbers in given range.
@@ -169,29 +167,33 @@ end
 Begin
 Numeric n,i,j
 accept n
-Initialize i to 1
-Initialize flag=0
-Initialize j=4
-while i< n, do:
+ i=1
+ flag=0
+ j=4
+while(i<n)
+begin
   flag=0
-if i==1
+ if(i==1)
+ begin
     display"Prime number are 1 "
-     else if i==2, then
+     else if(i==2) then
            display "2"
-     else if i==3
+     else if(i==3)
            display"3"
-     else if i>3
-           for j=2; j<i; j++
-            if i%j == 0, 
+     else if(i>3)
+           for(j=2;j<i;j++)
+            if(i%j==0)
+            begin 
                   flag=1
-                  break;
-            end if 
-             if flag==0, then
+                  break
+            end 
+             if(flag==0)
+             begin
                 display i
-             end if
-end if
-end while
-End
+             end
+  end
+end
+end
 ```
 ## Exercise 12:-Write a pseudocode to accept student Details like (StudentID, StudentName, StudentAge, Marks1, Marks2,Marks3) Calculate Total and Percentage. If percentage is greater than 50 then display “PASS” else display “FAIL”.
 ```
@@ -204,18 +206,17 @@ display enter studentname
  accept sn
 display enter studentage
  accept sa
-display enter marks1
+display enter marks1.
  accept m1 
-display enter marks2
+display enter marks2.
  accept m2  
-display enter marks3
+display enter marks3.
  accept m3
 total=m1+m2+m3
 pecentage=(m1+m2+m3)/3.0
-if percentage>50
+if(percentage>50)
  display "PASS"
 else
  display "FAIL"
-ENDIF
 end
 ```
